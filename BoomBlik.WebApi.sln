@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomBlik.Application.WebApi", "BoomBlik.Application.WebApi\BoomBlik.Application.WebApi.csproj", "{2033DE72-9FA6-45D7-9188-54F45C479B56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomBlik.Common", "BoomBlik.Common\BoomBlik.Common.csproj", "{B088D621-DDEF-4C90-95E4-E93DAABC4EFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomBlik.Core.Domain", "BoomBlik.Core.Domain\BoomBlik.Core.Domain.csproj", "{00E61500-05E3-4248-9A91-44DD423B36F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomBlik.Core.Infrastructure", "BoomBlik.Core.Infrastructure\BoomBlik.Core.Infrastructure.csproj", "{17CF6AE9-1F00-4212-BEDB-5B7D7AA3D3AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomBlik.Infrastructure.Repository", "BoomBlik.Infrastructure.Repository\BoomBlik.Infrastructure.Repository.csproj", "{3512F36D-974A-42DE-BBCD-37D4F5BCB551}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomBlik.Modules.Reports", "BoomBlik.Modules.Reports\BoomBlik.Modules.Reports.csproj", "{1E5041CA-C27E-412D-B46A-0EEC31769A24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoomBlik.Modules.Reports.Tests", "BoomBlik.Modules.Reports.Tests\BoomBlik.Modules.Reports.Tests.csproj", "{8093DB3A-8670-4A08-970B-D7DEAF92FF20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2033DE72-9FA6-45D7-9188-54F45C479B56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2033DE72-9FA6-45D7-9188-54F45C479B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2033DE72-9FA6-45D7-9188-54F45C479B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2033DE72-9FA6-45D7-9188-54F45C479B56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B088D621-DDEF-4C90-95E4-E93DAABC4EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B088D621-DDEF-4C90-95E4-E93DAABC4EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B088D621-DDEF-4C90-95E4-E93DAABC4EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B088D621-DDEF-4C90-95E4-E93DAABC4EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00E61500-05E3-4248-9A91-44DD423B36F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E61500-05E3-4248-9A91-44DD423B36F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E61500-05E3-4248-9A91-44DD423B36F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E61500-05E3-4248-9A91-44DD423B36F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17CF6AE9-1F00-4212-BEDB-5B7D7AA3D3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17CF6AE9-1F00-4212-BEDB-5B7D7AA3D3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17CF6AE9-1F00-4212-BEDB-5B7D7AA3D3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17CF6AE9-1F00-4212-BEDB-5B7D7AA3D3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3512F36D-974A-42DE-BBCD-37D4F5BCB551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3512F36D-974A-42DE-BBCD-37D4F5BCB551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3512F36D-974A-42DE-BBCD-37D4F5BCB551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3512F36D-974A-42DE-BBCD-37D4F5BCB551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E5041CA-C27E-412D-B46A-0EEC31769A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E5041CA-C27E-412D-B46A-0EEC31769A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E5041CA-C27E-412D-B46A-0EEC31769A24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E5041CA-C27E-412D-B46A-0EEC31769A24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8093DB3A-8670-4A08-970B-D7DEAF92FF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8093DB3A-8670-4A08-970B-D7DEAF92FF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8093DB3A-8670-4A08-970B-D7DEAF92FF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8093DB3A-8670-4A08-970B-D7DEAF92FF20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

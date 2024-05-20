@@ -1,0 +1,75 @@
+﻿using AutoMapper;
+using BoomBlik.Core.Domain.Dtos;
+using BoomBlik.Core.Infrastructure.Entities;
+
+namespace BoomBlik.Infrastructure.Repository.Mappers;
+
+public class TreeReportMapper : Profile
+{
+    public TreeReportMapper()
+    {
+        CreateMap<TreeReportDto, TreeReportEntity>()
+            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
+            .ForMember(dest => dest.TreeId, opt => opt.MapFrom(src => src.TreeId))
+            .ForMember(dest => dest.Advice, opt => opt.MapFrom(src => src.Advice))
+            .ForMember(dest => dest.AdviceAddition, opt => opt.MapFrom(src => src.AdviceAddition))
+            .ForMember(dest => dest.TreeHeight, opt => opt.MapFrom(src => src.TreeHeight))
+            .ForMember(dest => dest.TreeHeightAddition, opt => opt.MapFrom(src => src.TreeHeightAddition))
+            .ForMember(dest => dest.Condition, opt => opt.MapFrom(src => src.Condition))
+            .ForMember(dest => dest.ConditionAddition, opt => opt.MapFrom(src => src.ConditionAddition))
+            .ForMember(dest => dest.Groeifase, opt => opt.MapFrom(src => src.Groeifase))
+            .ForMember(dest => dest.GrowthPhaseAddition, opt => opt.MapFrom(src => src.GrowthPhaseAddition))
+            .ForMember(dest => dest.Crown, opt => opt.MapFrom(src => src.Crown))
+            .ForMember(dest => dest.CrownAddition, opt => opt.MapFrom(src => src.CrownAddition))
+            .ForMember(dest => dest.Stem, opt => opt.MapFrom(src => src.Stem))
+            .ForMember(dest => dest.StemAddition, opt => opt.MapFrom(src => src.StemAddition))
+            .ForMember(dest => dest.StemFoot, opt => opt.MapFrom(src => src.StemFoot))
+            .ForMember(dest => dest.StemFootAddition, opt => opt.MapFrom(src => src.StemFootAddition))
+            .ForMember(dest => dest.RiskClass, opt => opt.MapFrom(src => src.RiskClass))
+            .ForMember(dest => dest.RiskClassAddition, opt => opt.MapFrom(src => src.RiskClassAddition))
+            .ForMember(dest => dest.Orientation, opt => opt.MapFrom(src => src.Orientation))
+            .ForMember(dest => dest.OrientationAddition, opt => opt.MapFrom(src => src.OrientationAddition))
+            .ForMember(dest => dest.FutureExpectation, opt => opt.MapFrom(src => src.FutureExpectation))
+            .ForMember(dest => dest.FutureExpectationAddition, opt => opt.MapFrom(src => src.FutureExpectationAddition))
+            .ForMember(dest => dest.Urgency, opt => opt.MapFrom(src => src.Urgency))
+            .ForMember(dest => dest.UrgencyAddition, opt => opt.MapFrom(src => src.UrgencyAddition))
+            .ForMember(dest => dest.Date, opt => opt.MapFrom(src => src.Date))
+            .ForMember(dest => dest.DateNextCheck, opt => opt.MapFrom(src => src.DateNextCheck))
+            .ForMember(dest => dest.TemplatePdfUrl, opt => opt.MapFrom(src => src.TemplatePdfUrl))
+            .ForMember(dest => dest.CreatedOn, opt => opt.MapFrom(src => src.CreatedOn))
+            .ForMember(dest => dest.ModifiedOn, opt => opt.MapFrom(src => src.ModifiedOn))
+            .ForMember(dest => dest.IsActive, opt => opt.MapFrom(src => src.IsActive));
+
+        CreateMap<TreeReportEntity, TreeReportDto>()
+            .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
+            .ForMember(dest => dest.TreeId, opt => opt.MapFrom(src => src.TreeId))
+            .ForMember(dest => dest.Advice, opt => opt.MapFrom(src => src.Advice))
+            .ForMember(dest => dest.AdviceAddition, opt => opt.MapFrom(src => src.AdviceAddition))
+            .ForMember(dest => dest.TreeHeight, opt => opt.MapFrom(src => src.TreeHeight))
+            .ForMember(dest => dest.TreeHeightAddition, opt => opt.MapFrom(src => src.TreeHeightAddition))
+            .ForMember(dest => dest.Condition, opt => opt.MapFrom(src => src.Condition))
+            .ForMember(dest => dest.ConditionAddition, opt => opt.MapFrom(src => src.ConditionAddition))
+            .ForMember(dest => dest.Groeifase, opt => opt.MapFrom(src => src.Groeifase))
+            .ForMember(dest => dest.GrowthPhaseAddition, opt => opt.MapFrom(src => src.GrowthPhaseAddition))
+            .ForMember(dest => dest.Crown, opt => opt.MapFrom(src => src.Crown))
+            .ForMember(dest => dest.CrownAddition, opt => opt.MapFrom(src => src.CrownAddition))
+            .ForMember(dest => dest.Stem, opt => opt.MapFrom(src => src.Stem))
+            .ForMember(dest => dest.StemAddition, opt => opt.MapFrom(src => src.StemAddition))
+            .ForMember(dest => dest.StemFoot, opt => opt.MapFrom(src => src.StemFoot))
+            .ForMember(dest => dest.StemFootAddition, opt => opt.MapFrom(src => src.StemFootAddition))
+            .ForMember(dest => dest.RiskClass, opt => opt.MapFrom(src => src.RiskClass))
+            .ForMember(dest => dest.RiskClassAddition, opt => opt.MapFrom(src => src.RiskClassAddition))
+            .ForMember(dest => dest.Orientation, opt => opt.MapFrom(src => src.Orientation))
+            .ForMember(dest => dest.OrientationAddition, opt => opt.MapFrom(src => src.OrientationAddition))
+            .ForMember(dest => dest.FutureExpectation, opt => opt.MapFrom(src => src.FutureExpectation))
+            .ForMember(dest => dest.FutureExpectationAddition, opt => opt.MapFrom(src => src.FutureExpectationAddition))
+            .ForMember(dest => dest.Urgency, opt => opt.MapFrom(src => src.Urgency))
+            .ForMember(dest => dest.UrgencyAddition, opt => opt.MapFrom(src => src.UrgencyAddition))
+            .ForMember(dest => dest.Date, opt => opt.MapFrom(src => src.Date))
+            .ForMember(dest => dest.DateNextCheck, opt => opt.MapFrom(src => src.DateNextCheck))
+            .ForMember(dest => dest.TemplatePdfUrl, opt => opt.MapFrom(src => src.TemplatePdfUrl))
+            .ForMember(dest => dest.CreatedOn, opt => opt.MapFrom(src => src.CreatedOn))
+            .ForMember(dest => dest.ModifiedOn, opt => opt.MapFrom(src => src.ModifiedOn))
+            .ForMember(dest => dest.IsActive, opt => opt.MapFrom(src => src.IsActive));
+    }
+}
